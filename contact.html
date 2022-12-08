@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Future Residency </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <!--CSS only-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+        crossorigin="anonymous">
+
+        <!--bootstrap only-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+        crossorigin="anonymous"></script>
+
+    </head>
+
+    <body id="body">
+
+        <!-- Navigation bar-->
+        <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="website_name" href="#"><img id="nav_logo" src="images/logo_t.png"> Future Residency Limited</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+              aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="feature.html">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="service.html">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="payment.html">Payment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="help.html">Help</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="signIn" href="signIn.html"><i class="fa-solid fa-circle-user"> </i> Sign in</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <!-- Contact Information -->
+        <h3 id="header">Contact Information</h3>
+        <div class="container">
+          <i class="fa-solid fa-phone-volume"></i> 09-777 249 705 <br>
+          <i class="fa-regular fa-envelope"></i> futureResidency@gmail.com<br>
+          <i class="fa-solid fa-location-dot"></i> 40 Dhamika Waddy St, Yangon <br>
+          <i class="fa-regular fa-clock"></i> <span style="color:green"> Opened now </span> 8:30 AM to 5 PM
+        </div>
+
+
+        
+        <!-- YouTube Channel -->
+        <h3 id="header">Our YouTube Channel</h3>
+        <div class="container" id="bg-block">
+          <p>Please visit our youtube channel and support us!</p>
+          <iframe width="90%" height="330" src="https://www.youtube.com/embed/NV_zP_15qCo" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; 
+          gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        
+        <!-- Place on map -->
+        <h3 id="header">Map view</h3>
+        <div class="container" id="bg-block">
+          <p>Please visit us from map!</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30555.
+          33441111652!2d96.11798607579252!3d16.80566653634613!2m3!1f0!2f0!3f0!3m2!
+          1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb7d00565297%3A0xcc89a4eb80a83187!
+          2sProperty%20in%20Myanmar%20(PIM)!5e0!3m2!1sen!2smm!4v1670085718941!5m2!1sen!2smm" 
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- User Feedback section -->
+        <h3 id="header">User Feedback</h3>
+        <div class="container" id="bg-block">
+          <table id="user_contact">
+            <tr>
+              <td>
+                <h4 id="website_name">Future Residency Limited</h4>
+                <img src="images/logo.png" style="width:80%"><br>
+                Please kindly give us your suggestion!
+              </td>
+              <td>
+                <form class="user_feedback" name="form1" onsubmit="displayMessage()">
+                  Your name (required)<br><input type="text" placeholder="Enter Username" required><br><br>
+                  Your email (required)<br><input type="email" placeholder="Enter Email" 
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+                  Your phone<br><input type="tel" pattern="09[0-9]{2}[0-9]{3}[0-9]{4}" placeholder="eg. 09123456789"><br><br>
+                  Your message<br><textarea rows="6" placeholder="Enter message..."></textarea><br><br>
+                  <button type="submit" id="send_btn" name="send_btn">Send</button>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+
+        <!-- Connect links -->
+        <div class="icons">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-telegram"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+          Copyright from 'Future Residency Limited' 2022
+        </div>
+
+
+        <!-- Chat box -->
+        <div class="chat-btn">
+          <a href="#">
+            <i class="fa-brands fa-facebook-messenger"></i>Let's chat!
+          </a>
+        </div>
+
+    </body>
+</html>
+
+<script type="text/javascript">
+  function displayMessage() {
+  alert("Thank You For You Feedback!"); 
+  }
+</script>

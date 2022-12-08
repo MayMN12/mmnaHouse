@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Future Residency </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <!--CSS only-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+        crossorigin="anonymous">
+
+        <!--bootstrap only-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+        crossorigin="anonymous"></script>
+
+        <!-- For jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <style type="text/css">
+          .one{
+              color: blue;
+          }
+      </style>
+
+    </head>
+
+    <body id="body">
+
+        <!-- Navigation bar-->
+        <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="website_name" href="#"><img id="nav_logo" src="images/logo_t.png"> Future Residency Limited</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="feature.html">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="service.html">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="payment.html">Payment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="help.html">Help</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="signIn" href="signIn.html"><i class="fa-solid fa-circle-user"> </i> Sign in</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+          <span id="top"></span>
+          <!--  Question for sell  -->
+          <div class="container" id="bg-block-img">
+            
+            <h3 calss="rent">Frequently asked questions</h3><br>
+            <b>For selling a house</b><hr>
+
+            <div class="question">
+
+              <!-- Question 1 -->
+              <div class="dropdown">
+                <a class="dropdown-toggle" id="q-link" href="feature.html" onclick="showAns()"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  How much is my home worth?
+                </a>
+                <div class="dropdown-menu">
+                  <p class="dropdown-item" style="display: inline-block;">
+                    When considering selling your home, one of the first <br>
+                    questions you'll ask yourself is how much is my home worth? <br>
+                    Contact us and we'll provide you with a free property valuation.
+                  </p>
+                </div> 
+              </div>
+
+              <!-- Question 2 -->
+              <div class="dropdown">
+                <a class="dropdown-toggle" id="q-link" href="feature.html" onclick="showAns()"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  How long will it take to sell my home?
+                </a>
+                <div class="dropdown-menu">
+                  <p class="dropdown-item" style="display: inline-block;">
+                    There are many variables to take into consideration when <br>
+                    thinking how long it'll take to sell your property. What type of  <br>
+                    property, the location, price and size will all be factors.
+                  </p>
+                </div> 
+              </div>
+
+              <!-- Question 3 -->
+              <div class="dropdown">
+                <a class="dropdown-toggle" id="q-link" href="feature.html" onclick="showAns()"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  How will FRL focus on selling my property?
+                </a>
+                <div class="dropdown-menu">
+                  <p class="dropdown-item" style="display: inline-block;">
+                    When considering selling your home, one of the first <br>
+                    questions you'll ask yourself is how much is my home worth? <br>
+                    Contact us and we'll provide you with a free property valuation.
+                  </p>
+                </div> 
+              </div>
+
+              <!-- Question 4 -->
+              <div class="dropdown">
+                <a class="dropdown-toggle" id="q-link" href="feature.html" onclick="showAns()"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  How long is the process to sell my property?
+                </a>
+                <div class="dropdown-menu">
+                  <p class="dropdown-item" style="display: inline-block;">
+                    After finding the prospective buyer to the completion of the <br>
+                    sale, including time for legal conveyancing, document checks <br>
+                    and negotiations. The whole process will take on average 4 to 8 weeks.
+                  </p>
+                </div> 
+              </div>
+
+            </div>
+          </div>
+          <!-- Frequent asked question block end -->
+
+          <!-- Popular Searches -->
+          <div class="container" id="bg-block-img">
+            <h3 calss="rent">Popular Searches</h3><br>
+            <b>Here are the Popular searches of FRL!</b><hr>
+            <div id="pop-searches">
+              <i class="fa-solid fa-chevron-right"></i> <a href="#"> Condo For Rent</a><br>
+              <i class="fa-solid fa-chevron-right"></i> <a href="#"> Appartment For Rent</a><br>
+              <i class="fa-solid fa-chevron-right"></i> <a href="#"> Property For Sale</a><br>
+              <i class="fa-solid fa-chevron-right"></i> <a href="#"> Property For Rent</a><br>
+              <i class="fa-solid fa-chevron-right"></i> <a href="#"> Villa For Sale</a><br>
+              <i class="fa-solid fa-chevron-right"></i> <a href="#"> Condo For Sale</a><br>
+            </div>
+          </div>
+
+          <!-- Connect links -->
+          <div class="icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+
+          <!-- Footer -->
+          <div class="footer">
+            Copyright from 'Future Residency Limited' 2022
+          </div>
+
+          <!-- Up button -->
+          <a href="#top">
+            <div class="icon_container">
+                  <i class="fa-solid fa-arrow-up"></i>
+            </div>
+          </a>
+
+
+    </body>
+</html>
